@@ -1,0 +1,15 @@
+.wrapper {
+	background: linear-gradient(to bottom, #8360c3, #2ebf91);
+}
+
+.innerWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 50px;
+}
+
+.buttonWrapper {
+	display: flex;
+	align-items: center;
+}
