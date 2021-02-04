@@ -1,12 +1,18 @@
+@import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/sizes';
+
 .wrapper {
-	background: linear-gradient(to bottom, #8360c3, #2ebf91);
+	background: linear-gradient(to bottom, #0575e6, #021b79);
+	box-shadow: 0 2px 7px 0 rgba($colorDark, 0.75);
+
+	color: $colorLight;
 }
 
 .innerWrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 50px;
+	min-height: $headerHeight;
 }
 
 .buttonWrapper {
