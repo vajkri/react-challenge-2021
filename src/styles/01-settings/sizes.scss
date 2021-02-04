@@ -1,0 +1,31 @@
+// Border & border radius size
+$borderSize: 1px;
+$borderSizeLg: 3px;
+
+$borderRadiusSm: 5px;
+$borderRadius: 10px;
+$borderRadiusLg: 20px;
+
+// Content width
+$contentWidthNarrow: 1000px;
+$contentWidth: 1260px;
+$contentWidthWide: 1640px;
+
+// Responsive multipliers
+// Used for declaring responsive adjustments
+// to e.g. font-sizes, and icons
+$mobileMultiplier: 0.85;
+$mobileMultiplierSubtle: 0.925;
+
+// Component specific
+$headerHeight: 50px;
+
+// Icon Sizes
+$iconSizeSm: 16px;
+$iconSizeMd: 22px;
+$iconSizeLg: 32px;
+
+// Button Sizes
+$buttonSmHeight: 30px;
+$buttonMdHeight: 36px;
+$buttonLgHeight: 44px;

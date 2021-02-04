@@ -1,0 +1,22 @@
+@import '../01-settings/spacing';
+@import '../01-settings/sizes';
+@import '../02-tools/media';
+
+.u-container {
+	width: calc(100% - #{$spacingBase * 2});
+	max-width: $contentWidth;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq('md') {
+		width: calc(100% - #{$spacingLg * 2});
+	}
+}
+
+.u-container--narrow {
+	max-width: $contentWidthNarrow;
+}
+
+.u-container--wide {
+	max-width: $contentWidthWide;
+}

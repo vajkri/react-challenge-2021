@@ -1,0 +1,17 @@
+$breakpoints: (
+	'xs': 360px,
+	'sm': 768px,
+	'md': 1024px,
+	'lg': 1260px,
+	'xl': 1600px,
+);
+
+$breakpointsNames: (
+	'Xs': 'xs',
+	'Sm': 'sm',
+	'Md': 'md',
+	'Lg': 'lg',
+	'Xl': 'xl',
+);
+
+// See implementation of these in 09-utilities/media.scss

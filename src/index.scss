@@ -1,0 +1,35 @@
+/*------------------------------------*\
+		index.scss
+\*------------------------------------*/
+
+/**
+ * #1 - SETTINGS
+ */
+@import './styles/01-settings/behavior';
+@import './styles/01-settings/breakpoints';
+@import './styles/01-settings/colors';
+@import './styles/01-settings/sizes';
+@import './styles/01-settings/spacing';
+@import './styles/01-settings/typography';
+
+/**
+ * #2 - TOOLS
+ */
+@import './styles/02-tools/media';
+
+/**
+ * #3 - GENERIC
+ */
+@import './styles/03-generic/box-sizing';
+@import './styles/03-generic/normalize';
+@import './styles/03-generic/reset';
+
+/**
+ * #4 - ELEMENTS
+ */
+@import './styles/04-elements/page';
+
+/**
+ * #9 - UTILITIES
+ */
+@import './styles/09-utilities/container';

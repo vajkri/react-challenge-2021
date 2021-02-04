@@ -1,0 +1,11 @@
+@import '../01-settings/colors';
+@import '../01-settings/typography';
+
+html {
+	font-family: $fontFamilySansSerif;
+	font-size: $fontSizeBase;
+	line-height: $lineHeightLg;
+	color: $colorDark;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
