@@ -1,0 +1,21 @@
+@import '../../styles/01-settings/behavior';
+@import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/spacing';
+@import '../../styles/01-settings/typography';
+
+.button {
+	display: inline-flex;
+	padding: $spacingXs $spacingSm;
+	font-weight: $fontWeightSemiBold;
+
+	transition: background-color $easeBase $transTimeSm;
+}
+
+.colorDark {
+	background-color: $colorGrey100;
+	color: $colorLight;
+
+	&:hover {
+		background-color: $colorGrey100Hover;
+	}
+}

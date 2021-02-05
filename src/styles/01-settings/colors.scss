@@ -3,9 +3,12 @@ $colorPrimary: #fbd01e;
 
 // Utility colors
 $colorLight: #ffffff;
-$colorDark: #2e2e2e;
-$colorGrey100: #888888;
-$colorGrey200: #d0d4d7;
+$colorDark: #282828;
+$colorGrey100: #3d3d3d;
+$colorGrey200: #888888;
+$colorGrey300: #d0d4d7;
+
+$colorGrey100Hover: darken($colorGrey100, 8%);
 
 $colorPositive: #7ede28;
 $colorNegative: #ff421e;
