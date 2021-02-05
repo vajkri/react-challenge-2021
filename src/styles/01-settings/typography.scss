@@ -7,13 +7,16 @@ $fontWeightRegular: 400;
 $fontWeightBold: 700;
 
 // Font sizes
-$fontSizeH1: 36px;
-$fontSizeH2: 24px;
-$fontSizeH3: 16px;
+$fontSizeRemBase: 14px;
+$fontSizeRemBaseDesktop: 16px;
 
-$fontSizeLg: 20px;
-$fontSizeBase: 16px;
-$fontSizeSm: 14px;
+$fontSizeH1: 1.75rem;
+$fontSizeH2: 1.325rem;
+$fontSizeH3: 1rem;
+
+$fontSizeLg: 1.25rem;
+$fontSizeBase: 1rem;
+$fontSizeSm: 0.875rem;
 
 // Line heights
 $lineHeightLg: 1.5;

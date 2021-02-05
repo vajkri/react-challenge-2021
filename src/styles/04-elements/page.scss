@@ -1,11 +1,16 @@
 @import '../01-settings/colors';
 @import '../01-settings/typography';
+@import '../02-tools/media';
 
 html {
 	font-family: $fontFamilySansSerif;
-	font-size: $fontSizeBase;
+	font-size: $fontSizeRemBase;
 	line-height: $lineHeightLg;
 	color: $colorDark;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@include mq('sm') {
+		font-size: $fontSizeRemBaseDesktop;
+	}
 }
