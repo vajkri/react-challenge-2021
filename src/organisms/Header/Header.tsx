@@ -7,7 +7,9 @@ export const Header: React.FunctionComponent = () => {
 	return (
 		<header className={styles.wrapper}>
 			<div className={classNames(styles.innerWrapper, 'u-container')}>
-				<Link href={'/'}>Logo</Link>
+				<Link href={'/'} className={styles.logo}>
+					DEMO Streaming
+				</Link>
 				<div className={styles.buttonWrapper}>
 					<button>Log in</button>
 					<button className="u-ml-xs">Start your free trial</button>

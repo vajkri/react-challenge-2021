@@ -6,12 +6,4 @@ $breakpoints: (
 	'xl': 1600px,
 );
 
-$breakpointsNames: (
-	'Xs': 'xs',
-	'Sm': 'sm',
-	'Md': 'md',
-	'Lg': 'lg',
-	'Xl': 'xl',
-);
-
-// See implementation of these in 09-utilities/media.scss
+// See implementation of these in 02-tools/media.scss

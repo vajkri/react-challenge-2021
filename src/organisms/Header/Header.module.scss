@@ -1,5 +1,6 @@
 @import '../../styles/01-settings/colors';
 @import '../../styles/01-settings/sizes';
+@import '../../styles/01-settings/typography';
 
 .wrapper {
 	background: linear-gradient(to bottom, #0575e6, #021b79);
@@ -13,6 +14,11 @@
 	align-items: center;
 	justify-content: space-between;
 	min-height: $headerHeight;
+}
+
+.logo {
+	font-size: $fontSizeH1;
+	font-weight: $fontWeightBold;
 }
 
 .buttonWrapper {
