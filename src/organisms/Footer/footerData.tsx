@@ -1,3 +1,7 @@
+import imgAppStore from '../../assets/store/app-store.svg'
+import imgPlayStore from '../../assets/store/play-store.svg'
+import imgWindowsStore from '../../assets/store/windows-store.svg'
+
 export interface SiteLink {
 	label: string
 	url: string
@@ -53,19 +57,23 @@ export const socialLinks: SocialLink[] = [
 export interface ShopLink {
 	id: string
 	url: string
+	src: string
 }
 
 export const shopLinks: ShopLink[] = [
 	{
-		id: 'appStore',
+		id: 'app-store',
 		url: '#!',
+		src: imgAppStore,
 	},
 	{
-		id: 'googlePlay',
+		id: 'play-store',
 		url: '#!',
+		src: imgPlayStore,
 	},
 	{
-		id: 'microsoft',
+		id: 'windows-store',
 		url: '#!',
+		src: imgWindowsStore,
 	},
 ]
