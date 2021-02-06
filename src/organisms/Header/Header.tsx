@@ -10,11 +10,13 @@ export const Header: React.FunctionComponent = () => {
 	return (
 		<header className={styles.wrapper}>
 			<div className={classNames(styles.innerWrapper, 'u-container')}>
-				<Link href={'/'} className={styles.logo}>
+				<Link href={'/'} className={styles.logo} colorLight>
 					DEMO Streaming
 				</Link>
 				<div className={styles.buttonWrapper}>
-					<Link href="#!">Log in</Link>
+					<Link href="#!" colorLight>
+						Log in
+					</Link>
 					<Button className="u-ml" color={'dark'} onClick={handleTrialClick}>
 						Start your free trial
 					</Button>

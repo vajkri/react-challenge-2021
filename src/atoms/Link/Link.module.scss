@@ -1,0 +1,11 @@
+@import '../../styles/01-settings/behavior';
+@import '../../styles/01-settings/colors';
+
+.colorLight {
+	color: $colorLight;
+	transition: color $easeBase $transTimeSm;
+
+	&:hover {
+		color: $colorLightHover;
+	}
+}

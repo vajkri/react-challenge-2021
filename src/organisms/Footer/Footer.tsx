@@ -11,7 +11,7 @@ export const Footer: React.FunctionComponent = () => {
 				<ul className={styles.siteLinks}>
 					{siteLinks.map((link: SiteLink, i: number) => (
 						<li className={styles.siteLinkItem} key={i}>
-							<Link className={styles.siteLink} href={link.url}>
+							<Link className={styles.siteLink} href={link.url} colorLight>
 								{link.label}
 							</Link>
 						</li>
@@ -24,7 +24,7 @@ export const Footer: React.FunctionComponent = () => {
 					<ul className={styles.socialLinks}>
 						{socialLinks.map((link: SocialLink, i: number) => (
 							<li className={styles.socialLinkItem} key={i}>
-								<Link className={styles.socialLink} href={link.url}>
+								<Link className={styles.socialLink} href={link.url} colorLight>
 									<Icon id={link.id} />
 								</Link>
 							</li>
