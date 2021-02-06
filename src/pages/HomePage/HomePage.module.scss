@@ -1,0 +1,44 @@
+@import '../../styles/01-settings/behavior';
+@import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/sizes';
+@import '../../styles/01-settings/spacing';
+@import '../../styles/01-settings/typography';
+
+.wrapper {
+	display: flex;
+}
+
+.catLinkWrapper {
+	&:not(:last-child) {
+		margin-right: $spacingBase;
+	}
+}
+
+.catLink {
+	//
+}
+
+.catLinkImgWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 240px;
+
+	background-color: $colorDark;
+	border-radius: $borderRadius;
+
+	color: $colorLight;
+
+	transition: background-color $easeBase $transTimeBase;
+
+	.catLink:hover & {
+		background-color: $colorDarkHover;
+	}
+}
+
+.catLinkCategory {
+	font-size: $fontSizeBase;
+	text-transform: uppercase;
+}
