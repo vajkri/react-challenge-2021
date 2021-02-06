@@ -15,7 +15,7 @@ export const Header: React.FunctionComponent = () => {
 				</Link>
 				<div className={styles.buttonWrapper}>
 					<Link href="#!">Log in</Link>
-					<Button className="u-ml-base" color={'dark'} onClick={handleTrialClick}>
+					<Button className="u-ml" color={'dark'} onClick={handleTrialClick}>
 						Start your free trial
 					</Button>
 				</div>

@@ -8,7 +8,7 @@ export const PageContent: React.FunctionComponent = () => {
 	return (
 		<main>
 			<h1>Page title</h1>
-			<div className="u-container u-mt-lg">
+			<div className="u-container u-mt">
 				<Switch>
 					<Route exact path="/">
 						<HomePage />

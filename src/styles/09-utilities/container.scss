@@ -2,6 +2,14 @@
 @import '../01-settings/sizes';
 @import '../02-tools/media';
 
+/* =================================
+   #CONTAINER
+   ================================= */
+
+/**
+ * Utility classes for constraining widths of elements and centering them
+ */
+
 .u-container {
 	width: calc(100% - #{$spacingBase * 2});
 	max-width: $contentWidth;
