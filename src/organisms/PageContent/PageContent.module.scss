@@ -1,0 +1,19 @@
+@import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/spacing';
+@import '../../styles/01-settings/typography';
+
+.titleWrapper {
+	padding: $spacingSm 0;
+
+	background: $colorGrey100;
+	box-shadow: 0 2px 7px 0 rgba($colorDark, 0.75);
+
+	color: $colorLight;
+}
+
+.title {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: $fontSizeH2;
+}
