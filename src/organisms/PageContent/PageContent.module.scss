@@ -2,6 +2,10 @@
 @import '../../styles/01-settings/spacing';
 @import '../../styles/01-settings/typography';
 
+.wrapper {
+	flex-grow: 1;
+}
+
 .titleWrapper {
 	padding: $spacingSm 0;
 

@@ -1,0 +1,71 @@
+@import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/spacing';
+@import '../../styles/01-settings/typography';
+
+.wrapper {
+	margin-top: $spacingLg;
+	padding: $spacingLg 0;
+
+	background: $colorDark;
+	color: $colorLight;
+}
+
+.siteLinks {
+	display: flex;
+	font-size: $fontSizeSm;
+}
+
+.siteLinkItem {
+	&:not(:last-child) {
+		&::after {
+			content: '|';
+			padding-left: $spacingSm;
+			padding-right: $spacingSm;
+		}
+	}
+}
+
+.siteLink {
+	font-weight: $fontWeightSemiBold;
+}
+
+.copyright {
+	margin: $spacingBase 0 $spacingLg;
+	font-size: $fontSizeXs;
+}
+
+.socialBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.socialLinks {
+	display: flex;
+	align-items: center;
+	margin-right: $spacingBase;
+}
+
+.socialLinkItem {
+	&:not(:last-child) {
+		margin-right: $spacingBase;
+	}
+}
+
+.socialLink {
+}
+
+.shopLinks {
+	display: flex;
+	align-items: center;
+	margin-left: $spacingBase;
+}
+
+.shopLinkItem {
+	&:not(:last-child) {
+		margin-right: $spacingBase;
+	}
+}
+
+.shopLink {
+}
