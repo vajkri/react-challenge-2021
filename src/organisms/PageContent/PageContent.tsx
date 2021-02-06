@@ -10,16 +10,14 @@ export const PageContent: React.FunctionComponent = () => {
 	const renderPageContent = (title: string, page: JSX.Element) => {
 		return (
 			<>
-				<div className={styles.titleWrapper}>
-					<h1 className={classNames(styles.title, 'u-container')}>{title}</h1>
-				</div>
-				<div className="u-container u-mt">{page}</div>
+				<h1 className={styles.title}>{title}</h1>
+				<div className="u-mt">{page}</div>
 			</>
 		)
 	}
 
 	return (
-		<main className={styles.wrapper}>
+		<main className={classNames(styles.wrapper, 'u-container')}>
 			<Switch>
 				<Route exact path="/">
 					{renderPageContent('Popular Titles', <HomePage />)}

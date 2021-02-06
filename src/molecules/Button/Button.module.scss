@@ -1,11 +1,14 @@
 @import '../../styles/01-settings/behavior';
 @import '../../styles/01-settings/colors';
+@import '../../styles/01-settings/sizes';
 @import '../../styles/01-settings/spacing';
 @import '../../styles/01-settings/typography';
 
 .button {
 	display: inline-flex;
-	padding: $spacingXs $spacingSm;
+	padding: $spacingSm $spacingBase;
+
+	border-radius: $borderRadiusSm;
 	font-weight: $fontWeightSemiBold;
 
 	transition: background-color $easeBase $transTimeSm;

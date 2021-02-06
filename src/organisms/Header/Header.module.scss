@@ -3,7 +3,8 @@
 @import '../../styles/01-settings/typography';
 
 .wrapper {
-	background: linear-gradient(to bottom, #0575e6, #021b79);
+	background: $colorPrimary;
+
 	box-shadow: 0 2px 7px 0 rgba($colorDark, 0.75);
 
 	color: $colorLight;
@@ -24,4 +25,5 @@
 .buttonWrapper {
 	display: flex;
 	align-items: center;
+	font-weight: $fontWeightSemiBold;
 }
