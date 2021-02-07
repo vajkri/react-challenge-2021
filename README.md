@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# React coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a solution of the following challenge: 
+https://github.com/StreamCo/react-coding-challenge
+
+(I have not followed the design 100% provided in the challenge, as it's a bit outdated at this point.)
+
+The primary purpose of this project is to reflect my personal coding style and to serve as a possible skeleton for other React projects.
+
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
