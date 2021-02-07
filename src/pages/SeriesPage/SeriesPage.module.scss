@@ -1,0 +1,24 @@
+@import '../../styles/01-settings/spacing';
+
+$itemGapX: $spacingSm;
+$itemGapY: $spacingLg;
+
+.wrapper {
+	overflow: hidden;
+}
+
+.seriesList {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% + #{$itemGapX});
+	margin-left: -($itemGapX / 2);
+	margin-right: -($itemGapX / 2);
+	margin-top: -$itemGapY;
+}
+
+.seriesItem {
+	width: calc(25% - #{$itemGapX});
+	margin-left: ($itemGapX / 2);
+	margin-right: ($itemGapX/2);
+	margin-top: $itemGapY;
+}
