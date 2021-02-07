@@ -20,7 +20,7 @@ function App() {
 			.catch(function (error) {
 				setAppData({ ...appData, loading: false, error: error })
 			})
-	}, [setAppData])
+	}, []) // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 		<Router>
