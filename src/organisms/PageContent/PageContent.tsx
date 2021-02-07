@@ -2,8 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import classNames from 'classnames'
 import { HomePage } from '../../pages/HomePage/HomePage'
-import { MoviesPage } from '../../pages/MoviesPage/MoviesPage'
-import { SeriesPage } from '../../pages/SeriesPage/SeriesPage'
+import { MediaPage } from '../../pages/MediaPage/MediaPage'
 import styles from './PageContent.module.scss'
 import { DataProps } from '../../types'
 
@@ -23,8 +22,12 @@ export const PageContent: React.FunctionComponent<{ data: DataProps }> = props =
 				<Route exact path="/">
 					{renderPageContent('Popular Titles', <HomePage />)}
 				</Route>
-				<Route path="/movies">{renderPageContent('Popular Movies', <MoviesPage data={props.data} />)}</Route>
-				<Route path="/series">{renderPageContent('Popular Series', <SeriesPage data={props.data} />)}</Route>
+				<Route path="/movies">
+					{renderPageContent('Popular Movies', <MediaPage mediaType={'movie'} data={props.data} />)}
+				</Route>
+				<Route path="/series">
+					{renderPageContent('Popular Series', <MediaPage mediaType={'series'} data={props.data} />)}
+				</Route>
 			</Switch>
 		</main>
 	)

@@ -7,7 +7,7 @@ $itemGapY: $spacingLg;
 	overflow: hidden;
 }
 
-.seriesList {
+.mediaList {
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(100% + #{$itemGapX});
@@ -16,7 +16,7 @@ $itemGapY: $spacingLg;
 	margin-top: -$itemGapY;
 }
 
-.seriesItem {
+.mediaItem {
 	width: calc(25% - #{$itemGapX});
 	margin-left: ($itemGapX / 2);
 	margin-right: ($itemGapX/2);
