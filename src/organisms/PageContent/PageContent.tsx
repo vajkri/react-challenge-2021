@@ -5,8 +5,9 @@ import { HomePage } from '../../pages/HomePage/HomePage'
 import { MoviesPage } from '../../pages/MoviesPage/MoviesPage'
 import { SeriesPage } from '../../pages/SeriesPage/SeriesPage'
 import styles from './PageContent.module.scss'
+import { DataProps } from '../../types'
 
-export const PageContent: React.FunctionComponent = () => {
+export const PageContent: React.FunctionComponent<{ data: DataProps }> = props => {
 	const renderPageContent = (title: string, page: JSX.Element) => {
 		return (
 			<>
@@ -22,8 +23,8 @@ export const PageContent: React.FunctionComponent = () => {
 				<Route exact path="/">
 					{renderPageContent('Popular Titles', <HomePage />)}
 				</Route>
-				<Route path="/movies">{renderPageContent('Popular Movies', <MoviesPage />)}</Route>
-				<Route path="/series">{renderPageContent('Popular Series', <SeriesPage />)}</Route>
+				<Route path="/movies">{renderPageContent('Popular Movies', <MoviesPage data={props.data} />)}</Route>
+				<Route path="/series">{renderPageContent('Popular Series', <SeriesPage data={props.data} />)}</Route>
 			</Switch>
 		</main>
 	)
