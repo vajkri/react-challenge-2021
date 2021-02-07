@@ -1,6 +1,9 @@
 @import '../../styles/01-settings/colors';
 @import '../../styles/01-settings/spacing';
 @import '../../styles/01-settings/typography';
+@import '../../styles/02-tools/media';
+
+$layoutSwitch: 'sm';
 
 .wrapper {
 	margin-top: $spacingLg;
@@ -11,16 +14,25 @@
 }
 
 .siteLinks {
-	display: flex;
 	font-size: $fontSizeSm;
+
+	@include mq($layoutSwitch) {
+		display: flex;
+	}
 }
 
 .siteLinkItem {
+	@include mq($layoutSwitch, 'max') {
+		text-align: center;
+	}
+
 	&:not(:last-child) {
 		&::after {
-			content: '|';
-			padding-left: $spacingSm;
-			padding-right: $spacingSm;
+			@include mq($layoutSwitch) {
+				content: '|';
+				padding-left: $spacingSm;
+				padding-right: $spacingSm;
+			}
 		}
 	}
 }
@@ -32,18 +44,29 @@
 .copyright {
 	margin: $spacingBase 0 $spacingLg;
 	font-size: $fontSizeXs;
+
+	@include mq($layoutSwitch, 'max') {
+		text-align: center;
+	}
 }
 
 .socialBlock {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include mq($layoutSwitch) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .socialLinks {
 	display: flex;
 	align-items: center;
-	margin-right: $spacingBase;
+	justify-content: center;
+
+	@include mq($layoutSwitch) {
+		justify-content: flex-start;
+		margin-right: $spacingBase;
+	}
 }
 
 .socialLinkItem {
@@ -58,7 +81,14 @@
 .shopLinks {
 	display: flex;
 	align-items: center;
-	margin-left: $spacingBase;
+	justify-content: center;
+	margin-top: $spacingBase;
+
+	@include mq($layoutSwitch) {
+		justify-content: flex-end;
+		margin-top: 0;
+		margin-left: $spacingBase;
+	}
 }
 
 .shopLinkItem {

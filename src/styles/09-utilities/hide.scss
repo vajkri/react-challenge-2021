@@ -1,3 +1,5 @@
+@import '../02-tools/media';
+
 .u-hide-visually {
 	position: absolute !important;
 	height: 1px;
@@ -5,4 +7,12 @@
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 	white-space: nowrap; /* added line */
+}
+
+// TODO: implement dynamic hide, display classes
+
+.u-hide-sm-max {
+	@include mq('sm', 'max') {
+		display: none !important;
+	}
 }
