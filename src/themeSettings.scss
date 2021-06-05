@@ -1,0 +1,24 @@
+/* =================================
+   themeSettings.scss
+   ================================= */
+
+/**
+ * #1 - SETTINGS
+ */
+
+// Default settings
+@import './styles/01-settings/behavior';
+@import './styles/01-settings/breakpoints';
+@import './styles/01-settings/colors';
+@import './styles/01-settings/sizes';
+@import './styles/01-settings/spacing';
+@import './styles/01-settings/typography';
+
+
+// Theme overrides
+$colorPrimary: #ff2095;
+
+/**
+ * #2 - TOOLS
+ */
+@import './styles/02-tools/media';

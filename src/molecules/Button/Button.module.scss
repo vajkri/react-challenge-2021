@@ -1,8 +1,4 @@
-@import '../../styles/01-settings/behavior';
-@import '../../styles/01-settings/colors';
-@import '../../styles/01-settings/sizes';
-@import '../../styles/01-settings/spacing';
-@import '../../styles/01-settings/typography';
+@import 'src/themeSettings';
 
 .button {
 	display: inline-flex;
