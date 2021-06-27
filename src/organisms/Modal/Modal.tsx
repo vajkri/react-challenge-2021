@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
 import ReactDOM from 'react-dom'
+import { useOnClickAway } from '../../helpers'
 import { Button } from '../../molecules/Button/Button'
 import styles from './Modal.module.scss'
 
@@ -17,6 +18,7 @@ export interface ModalHandle {
 }
 
 const Modal: React.ForwardRefRenderFunction<ModalHandle, ModalProps> = (props, ref) => {
+	const modalRef = React.useRef<HTMLDivElement>(null)
 	const [isOpen, setIsOpen] = React.useState(props.defaultOpened || false)
 
 	const close = useCallback(() => setIsOpen(false), [])
@@ -44,11 +46,15 @@ const Modal: React.ForwardRefRenderFunction<ModalHandle, ModalProps> = (props, r
 		}
 	}, [handleEscape, isOpen])
 
+	useOnClickAway(modalRef, () => {
+		close()
+	})
+
 	return ReactDOM.createPortal(
 		isOpen ? (
 			<div className={styles.wrapper}>
 				<div className={styles.overlay} />
-				<article className={styles.modalWrapper}>
+				<article className={styles.modalWrapper} ref={modalRef}>
 					<Button className={styles.closeButton} onClick={close}>
 						X
 					</Button>
