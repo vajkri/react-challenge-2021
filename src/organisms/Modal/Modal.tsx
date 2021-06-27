@@ -19,19 +19,37 @@ export interface ModalHandle {
 const Modal: React.ForwardRefRenderFunction<ModalHandle, ModalProps> = (props, ref) => {
 	const [isOpen, setIsOpen] = React.useState(props.defaultOpened || false)
 
+	const close = useCallback(() => setIsOpen(false), [])
+
 	React.useImperativeHandle(ref, () => ({
 		open: () => setIsOpen(true),
-		close: () => setIsOpen(false),
+		close,
 	}))
 
-	const handleClose = useCallback(() => setIsOpen(false), [])
+	const handleEscape = React.useCallback(
+		e => {
+			if (e.keyCode === 27) {
+				close()
+			}
+		},
+		[close]
+	)
+
+	React.useEffect(() => {
+		if (isOpen) {
+			document.addEventListener('keydown', handleEscape, false)
+		}
+		return () => {
+			document.removeEventListener('keydown', handleEscape, false)
+		}
+	}, [handleEscape, isOpen])
 
 	return ReactDOM.createPortal(
 		isOpen ? (
 			<div className={styles.wrapper}>
 				<div className={styles.overlay} />
 				<article className={styles.modalWrapper}>
-					<Button className={styles.closeButton} onClick={handleClose}>
+					<Button className={styles.closeButton} onClick={close}>
 						X
 					</Button>
 					<h1>Hello</h1>
