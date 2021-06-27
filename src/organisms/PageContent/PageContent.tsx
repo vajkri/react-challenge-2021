@@ -19,7 +19,7 @@ export const PageContent: React.FunctionComponent<{ data: DataProps }> = props =
 				<Button className={'u-mt-lg'} color="dark" onClick={() => modalRef?.current?.open()}>
 					Open modal
 				</Button>
-				<Modal ref={modalRef} defaultOpened>
+				<Modal ref={modalRef}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, reiciendis!</p>
 				</Modal>
 			</>
