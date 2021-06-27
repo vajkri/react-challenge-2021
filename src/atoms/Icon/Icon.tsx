@@ -17,7 +17,7 @@ export const Icon: React.FunctionComponent<IconProps> = props => {
 				props.className
 			)}>
 			<svg>
-				<use href={'#' + props.id}></use>
+				<use href={'#' + props.id} />
 			</svg>
 		</i>
 	)
