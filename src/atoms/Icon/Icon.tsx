@@ -15,7 +15,8 @@ export const Icon: React.FunctionComponent<IconProps> = props => {
 				styles.wrapper,
 				{ [styles.sizeMd]: props.size === 'md' || props.size === undefined, [styles.sizeLg]: props.size === 'lg' },
 				props.className
-			)}>
+			)}
+		>
 			<svg>
 				<use href={'#' + props.id} />
 			</svg>

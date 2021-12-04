@@ -15,7 +15,8 @@ export const Button: React.FunctionComponent<ButtonProps> = props => (
 			{ [styles.colorLight]: props.color === 'light', [styles.colorDark]: props.color === 'dark' },
 			props.className
 		)}
-		onClick={props.onClick}>
+		onClick={props.onClick}
+	>
 		{props.children}
 	</button>
 )
