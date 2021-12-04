@@ -11,15 +11,15 @@ $itemGapY: $spacingLg;
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(100% + #{$itemGapX});
-	margin-left: -($itemGapX / 2);
-	margin-right: -($itemGapX / 2);
+	margin-left: calc(#{$itemGapX} / -2);
+	margin-right: calc(#{$itemGapX} / -2);
 	margin-top: -$itemGapY;
 }
 
 .mediaItem {
 	width: calc(50% - #{$itemGapX});
-	margin-left: ($itemGapX / 2);
-	margin-right: ($itemGapX/2);
+	margin-left: calc(#{$itemGapX} / -2);
+	margin-right: calc(#{$itemGapX} / -2);
 	margin-top: $itemGapY;
 
 	@include mq('sm') {
