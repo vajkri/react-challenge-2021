@@ -29,9 +29,7 @@ export const PageContent: React.FunctionComponent<{ data: DataProps }> = props =
 	return (
 		<main className={classNames(styles.wrapper, 'u-container')}>
 			<Switch>
-				<Route exact path="/">
-					{renderPageContent('Popular Titles', <HomePage />)}
-				</Route>
+				<Route path="/">{renderPageContent('Popular Titles', <HomePage />)}</Route>
 				<Route path="/movies">
 					{renderPageContent('Popular Movies', <MediaPage mediaType={'movie'} data={props.data} />)}
 				</Route>
