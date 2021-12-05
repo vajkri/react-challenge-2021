@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import styles from './Button.module.scss'
 
-interface ButtonProps {
+export interface ButtonProps {
 	className?: string
 	onClick?: () => void
 	color?: 'dark' | 'light'
@@ -15,8 +15,7 @@ export const Button: React.FunctionComponent<ButtonProps> = props => (
 			{ [styles.colorLight]: props.color === 'light', [styles.colorDark]: props.color === 'dark' },
 			props.className
 		)}
-		onClick={props.onClick}
-	>
+		onClick={props.onClick}>
 		{props.children}
 	</button>
 )
