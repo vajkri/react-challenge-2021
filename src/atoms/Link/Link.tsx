@@ -3,7 +3,7 @@ import { Link as ClientLink } from 'react-router-dom'
 import classNames from 'classnames'
 import styles from './Link.module.scss'
 
-interface LinkProps {
+export interface LinkProps {
 	className?: string
 	href: string
 	colorLight?: boolean
